@@ -139,6 +139,20 @@ def shoe_size(name)
   end
 end
 
+def player_by_number(number)
+  new_hash = []
+  
+  game_hash.each do |team_key, team|
+    # team_key => :home, :away
+    # {.... :players}
+    new_hash << team[:players] 
+  end
+    binding.pry
+end
+
+player_by_number(33)
+# => "Brendan Haywood"
+
 def team_colors(team)
   colors = []
   game_hash.each do |location, team_data|
@@ -207,12 +221,18 @@ def big_shoe_rebounds
   #binding.pry
 end
 
+def most_points_scored
 
+end
 
+def winning_team
+  
+end
 
+def player_with_longest_nam
 
+end
 
-
-
-
-
+def long_name_steals_a_ton?
+  
+end
